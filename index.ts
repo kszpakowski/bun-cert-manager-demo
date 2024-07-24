@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
 https
   .createServer(
     {
-      cert: fs.readFileSync('./tls/server.crt'),
-      key: fs.readFileSync('./tls/server.key'),
+      cert: fs.readFileSync('./tls/tls.crt'),
+      key: fs.readFileSync('./tls/tls.key'),
     },
     app
   )

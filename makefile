@@ -8,7 +8,7 @@ stop:
 	docker kill bun-cert-manager-demo
 
 gen-cert:
-	openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out tls/server.crt -keyout tls/server.key
+	openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out tls/tls.crt -keyout tls/tls.key
 
 curl:
 	curl -vvvv -k https://localhost:9443/
