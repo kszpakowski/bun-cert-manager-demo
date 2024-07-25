@@ -1,9 +1,12 @@
 {
-  "name": "bun-cert-manager-demo",
-  "module": "index.ts",
+  "name": "cert-manager-demo",
+  "module": "index.js",
   "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
   "devDependencies": {
-    "@types/bun": "latest",
     "@types/express": "^4.17.21"
   },
   "peerDependencies": {
